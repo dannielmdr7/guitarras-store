@@ -1,0 +1,49 @@
+@media (min-width:768px) {
+  .productos-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width:1200px) {
+  .productos-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.productos-grid{
+  display:grid;
+  gap: 4rem;
+}
+.producto{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 1rem;
+  align-items: center;
+}
+.producto-nombre{
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.producto-description{
+  font-size: 1.6rem;
+}
+.producto-precio{
+  font-size: 6rem;
+  color: var(--primary);
+  margin: 0;
+  font-weight: 900;
+}
+.producto-enlace{
+  margin-top: 2rem;
+  color: black;
+  padding: 1rem 5rem;
+  border: 2px solid var(--primary);
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+.producto-enlace:hover{
+  background-color: var(--primary);
+  color: white;
+}
